@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/master.swiftdeps"
+  },
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/Tests/SwiftGifSPMTests/GifTests.swift": {
+    "dependencies": "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.d",
+    "object": "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.swift.o",
+    "swiftmodule": "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.swiftdeps"
+  }
+}

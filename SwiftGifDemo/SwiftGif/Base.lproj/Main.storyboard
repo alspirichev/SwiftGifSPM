@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2C1-DJ-vd2">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DemoStart-->
+        <scene sceneID="6do-TL-efX">
+            <objects>
+                <viewController title="DemoStart" id="2C1-DJ-vd2" customClass="DemoVC" customModule="SwiftGifDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2kz-SQ-N3V"/>
+                        <viewControllerLayoutGuide type="bottom" id="VMf-eb-0QA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pH4-5V-QVg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmB-69-0TO" userLabel="Top Image View">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="333.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNm-Yy-OlU" userLabel="Bottom Image View">
+                                <rect key="frame" x="-4" y="333.5" width="383" height="333.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X3Y-WK-bWe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QNm-Yy-OlU" secondAttribute="trailing" constant="-20" id="0Y1-NG-P5F"/>
+                            <constraint firstItem="QNm-Yy-OlU" firstAttribute="top" secondItem="pH4-5V-QVg" secondAttribute="centerY" id="Dmg-fy-mnu"/>
+                            <constraint firstItem="kmB-69-0TO" firstAttribute="bottom" secondItem="pH4-5V-QVg" secondAttribute="centerY" id="QBP-fG-drz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kmB-69-0TO" secondAttribute="trailing" constant="-20" id="UC7-hD-j8N"/>
+                            <constraint firstItem="VMf-eb-0QA" firstAttribute="top" secondItem="QNm-Yy-OlU" secondAttribute="bottom" id="bbJ-Yl-ZBe"/>
+                            <constraint firstItem="QNm-Yy-OlU" firstAttribute="leading" secondItem="pH4-5V-QVg" secondAttribute="leadingMargin" constant="-20" id="eXH-ic-Ey3"/>
+                            <constraint firstItem="kmB-69-0TO" firstAttribute="top" secondItem="pH4-5V-QVg" secondAttribute="topMargin" id="gjD-fH-sot"/>
+                            <constraint firstItem="kmB-69-0TO" firstAttribute="leading" secondItem="pH4-5V-QVg" secondAttribute="leadingMargin" constant="-20" id="igP-7M-qDq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomImageView" destination="QNm-Yy-OlU" id="mrs-oc-ZeO"/>
+                        <outlet property="topImageView" destination="kmB-69-0TO" id="2NP-Ph-U3p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KY-Kb-HsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565.5" y="-98.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD2E6A5C2DA309E10056E473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E6A5B2DA309E10056E473 /* AppDelegate.swift */; };
+		CD2E6A602DA309E10056E473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E6A5F2DA309E10056E473 /* ViewController.swift */; };
+		CD2E6A632DA309E10056E473 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CD2E6A622DA309E10056E473 /* Base */; };
+		CD2E6A652DA309E20056E473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2E6A642DA309E20056E473 /* Assets.xcassets */; };
+		CD2E6A682DA309E20056E473 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CD2E6A672DA309E20056E473 /* Base */; };
+		CD2E6A732DA309E20056E473 /* SwiftGifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E6A722DA309E20056E473 /* SwiftGifTests.swift */; };
+		CD2E6A7D2DA309E20056E473 /* SwiftGifUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E6A7C2DA309E20056E473 /* SwiftGifUITests.swift */; };
+		CD2E6A7F2DA309E20056E473 /* SwiftGifUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E6A7E2DA309E20056E473 /* SwiftGifUITestsLaunchTests.swift */; };
+		CD2E6A8D2DA309F90056E473 /* SwiftGifSPM in Frameworks */ = {isa = PBXBuildFile; productRef = CD2E6A8C2DA309F90056E473 /* SwiftGifSPM */; };
+		CD2E6A8F2DA30A2F0056E473 /* DemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2E6A8E2DA30A2F0056E473 /* DemoVC.swift */; };
+		CD2E6A932DA30A840056E473 /* non_standard_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD2E6A902DA30A840056E473 /* non_standard_gif.gif */; };
+		CD2E6A942DA30A840056E473 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD2E6A912DA30A840056E473 /* adventure-time.gif */; };
+		CD2E6A952DA30A840056E473 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD2E6A922DA30A840056E473 /* jeremy.gif */; };
+		CD2E6A982DA30C960056E473 /* SwiftGifSPM in Frameworks */ = {isa = PBXBuildFile; productRef = CD2E6A972DA30C960056E473 /* SwiftGifSPM */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD2E6A6F2DA309E20056E473 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2E6A502DA309E10056E473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2E6A572DA309E10056E473;
+			remoteInfo = SwiftGif;
+		};
+		CD2E6A792DA309E20056E473 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2E6A502DA309E10056E473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2E6A572DA309E10056E473;
+			remoteInfo = SwiftGif;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD2E6A582DA309E10056E473 /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2E6A5B2DA309E10056E473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD2E6A5F2DA309E10056E473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD2E6A622DA309E10056E473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD2E6A642DA309E20056E473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD2E6A672DA309E20056E473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD2E6A692DA309E20056E473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2E6A6E2DA309E20056E473 /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2E6A722DA309E20056E473 /* SwiftGifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGifTests.swift; sourceTree = "<group>"; };
+		CD2E6A782DA309E20056E473 /* SwiftGifUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2E6A7C2DA309E20056E473 /* SwiftGifUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGifUITests.swift; sourceTree = "<group>"; };
+		CD2E6A7E2DA309E20056E473 /* SwiftGifUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGifUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD2E6A8E2DA30A2F0056E473 /* DemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVC.swift; sourceTree = "<group>"; };
+		CD2E6A902DA30A840056E473 /* non_standard_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = non_standard_gif.gif; sourceTree = "<group>"; };
+		CD2E6A912DA30A840056E473 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
+		CD2E6A922DA30A840056E473 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD2E6A552DA309E10056E473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2E6A982DA30C960056E473 /* SwiftGifSPM in Frameworks */,
+				CD2E6A8D2DA309F90056E473 /* SwiftGifSPM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2E6A6B2DA309E20056E473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2E6A752DA309E20056E473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD2E6A4F2DA309E10056E473 = {
+			isa = PBXGroup;
+			children = (
+				CD2E6A5A2DA309E10056E473 /* SwiftGif */,
+				CD2E6A712DA309E20056E473 /* SwiftGifTests */,
+				CD2E6A7B2DA309E20056E473 /* SwiftGifUITests */,
+				CD2E6A592DA309E10056E473 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD2E6A592DA309E10056E473 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2E6A582DA309E10056E473 /* SwiftGif.app */,
+				CD2E6A6E2DA309E20056E473 /* SwiftGifTests.xctest */,
+				CD2E6A782DA309E20056E473 /* SwiftGifUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2E6A5A2DA309E10056E473 /* SwiftGif */ = {
+			isa = PBXGroup;
+			children = (
+				CD2E6A912DA30A840056E473 /* adventure-time.gif */,
+				CD2E6A922DA30A840056E473 /* jeremy.gif */,
+				CD2E6A902DA30A840056E473 /* non_standard_gif.gif */,
+				CD2E6A5B2DA309E10056E473 /* AppDelegate.swift */,
+				CD2E6A8E2DA30A2F0056E473 /* DemoVC.swift */,
+				CD2E6A5F2DA309E10056E473 /* ViewController.swift */,
+				CD2E6A612DA309E10056E473 /* Main.storyboard */,
+				CD2E6A642DA309E20056E473 /* Assets.xcassets */,
+				CD2E6A662DA309E20056E473 /* LaunchScreen.storyboard */,
+				CD2E6A692DA309E20056E473 /* Info.plist */,
+			);
+			path = SwiftGif;
+			sourceTree = "<group>";
+		};
+		CD2E6A712DA309E20056E473 /* SwiftGifTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2E6A722DA309E20056E473 /* SwiftGifTests.swift */,
+			);
+			path = SwiftGifTests;
+			sourceTree = "<group>";
+		};
+		CD2E6A7B2DA309E20056E473 /* SwiftGifUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2E6A7C2DA309E20056E473 /* SwiftGifUITests.swift */,
+				CD2E6A7E2DA309E20056E473 /* SwiftGifUITestsLaunchTests.swift */,
+			);
+			path = SwiftGifUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD2E6A572DA309E10056E473 /* SwiftGif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2E6A822DA309E20056E473 /* Build configuration list for PBXNativeTarget "SwiftGif" */;
+			buildPhases = (
+				CD2E6A542DA309E10056E473 /* Sources */,
+				CD2E6A552DA309E10056E473 /* Frameworks */,
+				CD2E6A562DA309E10056E473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGif;
+			packageProductDependencies = (
+				CD2E6A8C2DA309F90056E473 /* SwiftGifSPM */,
+				CD2E6A972DA30C960056E473 /* SwiftGifSPM */,
+			);
+			productName = SwiftGif;
+			productReference = CD2E6A582DA309E10056E473 /* SwiftGif.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD2E6A6D2DA309E20056E473 /* SwiftGifTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2E6A852DA309E20056E473 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
+			buildPhases = (
+				CD2E6A6A2DA309E20056E473 /* Sources */,
+				CD2E6A6B2DA309E20056E473 /* Frameworks */,
+				CD2E6A6C2DA309E20056E473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2E6A702DA309E20056E473 /* PBXTargetDependency */,
+			);
+			name = SwiftGifTests;
+			productName = SwiftGifTests;
+			productReference = CD2E6A6E2DA309E20056E473 /* SwiftGifTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD2E6A772DA309E20056E473 /* SwiftGifUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2E6A882DA309E20056E473 /* Build configuration list for PBXNativeTarget "SwiftGifUITests" */;
+			buildPhases = (
+				CD2E6A742DA309E20056E473 /* Sources */,
+				CD2E6A752DA309E20056E473 /* Frameworks */,
+				CD2E6A762DA309E20056E473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2E6A7A2DA309E20056E473 /* PBXTargetDependency */,
+			);
+			name = SwiftGifUITests;
+			productName = SwiftGifUITests;
+			productReference = CD2E6A782DA309E20056E473 /* SwiftGifUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD2E6A502DA309E10056E473 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CD2E6A572DA309E10056E473 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CD2E6A6D2DA309E20056E473 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CD2E6A572DA309E10056E473;
+					};
+					CD2E6A772DA309E20056E473 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CD2E6A572DA309E10056E473;
+					};
+				};
+			};
+			buildConfigurationList = CD2E6A532DA309E10056E473 /* Build configuration list for PBXProject "SwiftGif" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD2E6A4F2DA309E10056E473;
+			packageReferences = (
+				CD2E6A962DA30C960056E473 /* XCLocalSwiftPackageReference "../Package" */,
+			);
+			productRefGroup = CD2E6A592DA309E10056E473 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD2E6A572DA309E10056E473 /* SwiftGif */,
+				CD2E6A6D2DA309E20056E473 /* SwiftGifTests */,
+				CD2E6A772DA309E20056E473 /* SwiftGifUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD2E6A562DA309E10056E473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2E6A952DA30A840056E473 /* jeremy.gif in Resources */,
+				CD2E6A932DA30A840056E473 /* non_standard_gif.gif in Resources */,
+				CD2E6A652DA309E20056E473 /* Assets.xcassets in Resources */,
+				CD2E6A942DA30A840056E473 /* adventure-time.gif in Resources */,
+				CD2E6A682DA309E20056E473 /* Base in Resources */,
+				CD2E6A632DA309E10056E473 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2E6A6C2DA309E20056E473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2E6A762DA309E20056E473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2E6A542DA309E10056E473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2E6A602DA309E10056E473 /* ViewController.swift in Sources */,
+				CD2E6A8F2DA30A2F0056E473 /* DemoVC.swift in Sources */,
+				CD2E6A5C2DA309E10056E473 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2E6A6A2DA309E20056E473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2E6A732DA309E20056E473 /* SwiftGifTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2E6A742DA309E20056E473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2E6A7F2DA309E20056E473 /* SwiftGifUITestsLaunchTests.swift in Sources */,
+				CD2E6A7D2DA309E20056E473 /* SwiftGifUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD2E6A702DA309E20056E473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2E6A572DA309E10056E473 /* SwiftGif */;
+			targetProxy = CD2E6A6F2DA309E20056E473 /* PBXContainerItemProxy */;
+		};
+		CD2E6A7A2DA309E20056E473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2E6A572DA309E10056E473 /* SwiftGif */;
+			targetProxy = CD2E6A792DA309E20056E473 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD2E6A612DA309E10056E473 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2E6A622DA309E10056E473 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD2E6A662DA309E20056E473 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2E6A672DA309E20056E473 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD2E6A802DA309E20056E473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD2E6A812DA309E20056E473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD2E6A832DA309E20056E473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4S6HCZJY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftGif/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.268b5ef5f54454d8.SwiftGif;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD2E6A842DA309E20056E473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4S6HCZJY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftGif/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.268b5ef5f54454d8.SwiftGif;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD2E6A862DA309E20056E473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4S6HCZJY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.268b5ef5f54454d8.SwiftGifTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftGif";
+			};
+			name = Debug;
+		};
+		CD2E6A872DA309E20056E473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4S6HCZJY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.268b5ef5f54454d8.SwiftGifTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftGif";
+			};
+			name = Release;
+		};
+		CD2E6A892DA309E20056E473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4S6HCZJY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.268b5ef5f54454d8.SwiftGifUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftGif;
+			};
+			name = Debug;
+		};
+		CD2E6A8A2DA309E20056E473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4S6HCZJY8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.268b5ef5f54454d8.SwiftGifUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftGif;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD2E6A532DA309E10056E473 /* Build configuration list for PBXProject "SwiftGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2E6A802DA309E20056E473 /* Debug */,
+				CD2E6A812DA309E20056E473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2E6A822DA309E20056E473 /* Build configuration list for PBXNativeTarget "SwiftGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2E6A832DA309E20056E473 /* Debug */,
+				CD2E6A842DA309E20056E473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2E6A852DA309E20056E473 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2E6A862DA309E20056E473 /* Debug */,
+				CD2E6A872DA309E20056E473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2E6A882DA309E20056E473 /* Build configuration list for PBXNativeTarget "SwiftGifUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2E6A892DA309E20056E473 /* Debug */,
+				CD2E6A8A2DA309E20056E473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CD2E6A962DA30C960056E473 /* XCLocalSwiftPackageReference "../Package" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Package;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD2E6A8C2DA309F90056E473 /* SwiftGifSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftGifSPM;
+		};
+		CD2E6A972DA30C960056E473 /* SwiftGifSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftGifSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD2E6A502DA309E10056E473 /* Project object */;
+}

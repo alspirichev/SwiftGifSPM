@@ -1,0 +1,4 @@
+module SwiftGifSPM {
+    header "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/SwiftGifSPM-Swift.h"
+    requires objc
+}

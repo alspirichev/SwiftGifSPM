@@ -1,0 +1,88 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SwiftGifSPM-debug.module": ["<SwiftGifSPM-debug.module>"]
+  "SwiftGifSPMPackageTests-debug.test": ["<SwiftGifSPMPackageTests-debug.test>"]
+  "SwiftGifSPMTests-debug.module": ["<SwiftGifSPMTests-debug.module>"]
+  "main": ["<SwiftGifSPM-debug.module>"]
+  "test": ["<SwiftGifSPM-debug.module>","<SwiftGifSPMPackageTests-debug.test>","<SwiftGifSPMTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/Tests/SwiftGifSPMTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/alspirichev/Documents/Work/SwiftGifSPM/Sources/SwiftGifSPM/UIImage+Gif.swift"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/sources"]
+    description: "Write auxiliary file /Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/sources"
+
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/UIImage+Gif.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.swift.o"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.product/Objects.LinkFileList"
+
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/alspirichev/Documents/Work/SwiftGifSPM/Tests/SwiftGifSPMTests/GifTests.swift"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/sources"]
+    description: "Write auxiliary file /Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/sources"
+
+  "/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<SwiftGifSPM-debug.module>":
+    tool: phony
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/UIImage+Gif.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.swiftmodule"]
+    outputs: ["<SwiftGifSPM-debug.module>"]
+
+  "<SwiftGifSPMPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.xctest/Contents/MacOS/SwiftGifSPMPackageTests"]
+    outputs: ["<SwiftGifSPMPackageTests-debug.test>"]
+
+  "<SwiftGifSPMTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.swiftmodule"]
+    outputs: ["<SwiftGifSPMTests-debug.module>"]
+
+  "C.SwiftGifSPM-debug.module":
+    tool: shell
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/Sources/SwiftGifSPM/UIImage+Gif.swift","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/sources"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/UIImage+Gif.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.swiftmodule"]
+    description: "Compiling Swift Module 'SwiftGifSPM' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SwiftGifSPM","-emit-dependencies","-emit-module","-emit-module-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.swiftmodule","-output-file-map","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/sources","-I","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug","-target","arm64-apple-macosx10.13","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j11","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/SwiftGifSPM-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","swiftgifspm"]
+
+  "C.SwiftGifSPMPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.build/UIImage+Gif.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.xctest/Contents/MacOS/SwiftGifSPMPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.xctest/Contents/MacOS/SwiftGifSPMPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug","-o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.xctest/Contents/MacOS/SwiftGifSPMPackageTests","-module-name","SwiftGifSPMPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMPackageTests.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.SwiftGifSPMTests-debug.module":
+    tool: shell
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/Tests/SwiftGifSPMTests/GifTests.swift","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPM.swiftmodule","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/sources"]
+    outputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/GifTests.swift.o","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.swiftmodule"]
+    description: "Compiling Swift Module 'SwiftGifSPMTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","SwiftGifSPMTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.swiftmodule","-output-file-map","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/SwiftGifSPMTests.build/sources","-I","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug","-target","arm64-apple-macosx13.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j11","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/alspirichev/Documents/Work/SwiftGifSPM/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","swiftgifspm"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/alspirichev/Documents/Work/SwiftGifSPM/Sources/","/Users/alspirichev/Documents/Work/SwiftGifSPM/Tests/SwiftGifSPMTests/","/Users/alspirichev/Documents/Work/SwiftGifSPM/Package.swift","/Users/alspirichev/Documents/Work/SwiftGifSPM/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
